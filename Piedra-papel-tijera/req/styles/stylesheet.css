@@ -79,7 +79,7 @@ li:hover
   border: 1.5px solid gray;
   background-color:whitesmoke;
 }
-#player_count span,#ordenador_count span
+#player_count span, #ordenador_count span
 {
   color: green;
   text-decoration: none;

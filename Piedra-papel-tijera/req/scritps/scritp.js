@@ -12,6 +12,23 @@ var round     		= 0;
 var option;
 var pc;
 
+$piedra.onclick = function(){
+	option = 0;
+	$selecto.textContent = "tu opcion es " + player.option[option];
+	random_Pc();
+}
+$papel.onclick = function(){
+	option = 1;
+	$selecto.textContent = "tu opcion es " + player.option[option];
+	random_Pc();
+}
+$tijera.onclick = function(){
+	option = 2;
+	$selecto.textContent = "tu opcion es " + player.option[option];
+	random_Pc();
+}
+
+
 function Read(){
 	$Round.textContent = round;
 	$cont_player.textContent = player.winCount;
@@ -29,30 +46,37 @@ function gamePlay(player_Option,ordenador_Option){
 			{
 				console.log("NoN Winner Restar Game");
 				alert("Empate, Partida anulada");
+				Read();
 			}
 		else if( ordenador_Option == "piedra" && player_Option == "papel" ){
 			player.winCount += 1;
 			++round;
+			Read();
 		}
 		else if( ordenador_Option == "papel" && player_Option == "piedra"){
 			ordenador.winCount += 1;
 			++round;
+			Read();
 		}
 		else if( ordenador_Option == "papel" && player_Option == "tijera"){
 			player.winCount += 1;
 			++round;
+			Read();
 		}
 		else if( ordenador_Option == "tijera" && player_Option == "papel" ){
 			ordenador.winCount += 1;
 			++round;
+			Read();
 		}
 		else if( ordenador_Option == "piedra" && player_Option == "tijera"){
 			ordenador.winCount += 1;
 			++round;
+			Read();
 		}
 		else if( ordenador_Option == "tijera" && player_Option == "piedra"){
 			player.winCount += 1;
 			++round;
+			Read();
 		}
 		Read();
 	}
@@ -75,31 +99,20 @@ function random_Pc(){
 	pc = Math.floor((Math.random() * 3) + 1);
 		if( pc == 3){
 			pc = 0;
+			result.textContent = "BOT : " + ordenador.option[parseInt(pc)];
+			Read();
 		}
 		else if (parseInt(pc) == 1) {
 			result.textContent = "BOT : " + ordenador.option[parseInt(pc)];
+			Read();
 		}
 		else if(parseInt(pc) == 2){
 			result.textContent = "BOT : " + ordenador.option[parseInt(pc)];
+			Read();
 		}
 		else{
 			result.textContent = "BOT : " + ordenador.option[parseInt(pc)];
+			Read();
 		}
 		gamePlay(player.option[option],ordenador.option[parseInt(pc)]);
-}
-
-$piedra.onclick = function(){
-	option = 0;
-	$selecto.textContent = "tu opcion es " + player.option[option];
-	random_Pc();
-}
-$papel.onclick = function(){
-	option = 1;
-	$selecto.textContent = "tu opcion es " + player.option[option];
-	random_Pc();
-}
-$tijera.onclick = function(){
-	option = 2;
-	$selecto.textContent = "tu opcion es " + player.option[option];
-	random_Pc();
 }

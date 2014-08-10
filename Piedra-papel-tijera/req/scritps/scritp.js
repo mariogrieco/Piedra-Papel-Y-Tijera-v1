@@ -8,7 +8,7 @@ var $selecto 		= document.getElementById("selecto");
 var $cont_ordenador = document.getElementById("ordenador_count");
 var player 	  		= {name:"",winCount:0,option:["piedra","papel","tijera"]};
 var ordenador 		= {name:"",winCount:0,option:["piedra","papel","tijera"]};
-var Round     		= 0;
+var round     		= 0;
 var option;
 var pc;
 

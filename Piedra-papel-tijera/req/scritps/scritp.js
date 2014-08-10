@@ -1,19 +1,19 @@
-var $piedra 	 	= document.getElementById("piedra");
-var $papel  	 	= document.getElementById("papel");
-var $tijera 	 	= document.getElementById("tijera");
-var $result 	 	= document.getElementById("result");
+var $piedra 		= document.getElementById("piedra");
+var $papel 			= document.getElementById("papel");
+var $tijera 		= document.getElementById("tijera");
+var $result 		= document.getElementById("result");
 var $cont_player 	= document.getElementById("player_count");
-var $Round 		    = document.getElementById("Round");
-var $selecto 	    = document.getElementById("selecto");
+var $Round 			= document.getElementById("Round");
+var $selecto 		= document.getElementById("selecto");
 var $cont_ordenador = document.getElementById("ordenador_count");
-var player 		  	= {name:"",winCount:0,option:["piedra","papel","tijera"]};
+var player 	  		= {name:"",winCount:0,option:["piedra","papel","tijera"]};
 var ordenador 		= {name:"",winCount:0,option:["piedra","papel","tijera"]};
-var round 			= 0;
+var Round     		= 0;
 var option;
 var pc;
 
 function Read(){
-	$round.textContent = round;
+	$Round.textContent = round;
 	$cont_player.textContent = player.winCount;
 	$cont_ordenador.textContent = ordenador.winCount;
 	if( round == 3 ){

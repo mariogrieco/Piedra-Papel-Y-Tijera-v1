@@ -27,8 +27,6 @@ $tijera.onclick = function(){
 	$selecto.textContent = "tu opcion es " + player.option[option];
 	random_Pc();
 }
-
-
 function Read(){
 	$Round.textContent = round;
 	$cont_player.textContent = player.winCount;
@@ -37,9 +35,7 @@ function Read(){
 		alert("Game Over! " + "Ordenador: "+ ordenador.winCount + "Player :" + player.winCount );
 	}
 }
-
 function gamePlay(player_Option,ordenador_Option){
-	debugger;
 	Read();
 	if( round < 3 ){
 		if( player_Option == ordenador_Option )

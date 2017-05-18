@@ -1,0 +1,22 @@
+a
+{
+  cursor: pointer;
+}
+.requiere p
+{
+  font-family: 'Jura', serif;
+  line-height: 1.35em;
+  letter-spacing: 0.05em;
+  text-align: right;
+  border-right: 3px solid red;
+  margin: 2em 0em 0em 0em;
+  padding: 0.5em;
+  background: gray;
+}
+#pla
+{
+}
+#pla p
+{
+  border-right: 3px solid #22bce0;
+}

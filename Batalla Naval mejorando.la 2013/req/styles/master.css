@@ -1,0 +1,42 @@
+body
+{
+  background-color: #434343;
+  color: white;
+  font-size: 16px;
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0 auto;
+  max-width : 1200px;
+  text-align: center;
+}
+nav ul li, nav ul,nav
+{
+  margin: 0px;
+  padding: 0px;
+}
+nav ul li, nav
+{
+  list-style: none;
+  text-align: center;
+  display: inline-block;
+}
+nav ul li a
+{
+  line-height: 1.35em;
+  letter-spacing: 0.05em;
+  color: green;
+  padding: 0.5em;
+  font-family: 'Aldrich', sans-serif;
+  -webkit-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+nav ul li a:hover
+{
+  background-color: #A7E6FF;
+  border-bottom: 1px solid gray;
+}
+#h1
+{
+  line-height: 1.35em;
+  letter-spacing: 0.05em;
+}

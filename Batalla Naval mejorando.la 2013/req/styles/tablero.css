@@ -1,0 +1,27 @@
+li
+{
+  height: 40px;
+  width: 40px;
+  border: 1px solid black;
+  background: black;
+}
+li:hover
+{
+  background: blue;
+}
+#Player,#BOT
+{
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.5em;
+  background: brown;
+  margin: 1em;
+}
+#Player
+{
+  border: 1px solid red;
+}
+#BOT
+{
+  border: 1px solid red;
+}
